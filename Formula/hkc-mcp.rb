@@ -1,25 +1,25 @@
 class HkcMcp < Formula
   desc "MCP server that lets Claude read and control a Hyundai/Kia (India) connected car"
   homepage "https://github.com/SwapShaOnline/hkconnect"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.1/hkc-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "0c6da6f87a35aaf98161956b75a15cda97cc5bbedbfe3d5aab24a35b87a2d632"
+      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.2/hkc-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "d8b49294b5540508fdab8b7cbb6268a48a16c78fcf03c40405865722bdcda9e3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.1/hkc-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "b66d7bb6ee9a53516e32befa8a8a5d5a492ce51be30a8eab5ad67ca54b831735"
+      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.2/hkc-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "94e4312d8d1081ee01cebdad977ae2663c650fbcbb392cc8b7cdb58e39d17717"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.1/hkc-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6fea86f86c559bc36b3cc48ec25d69f5c744bb9bb194ccf7e37ee8f526556ffa"
+      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.2/hkc-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "91ee2999b6fce538bddc4c2bbdf59458b5a128f466b50956017b58b5dc2cdbfb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.1/hkc-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "00a8d005da50634e99601beaa4e3e18d6f6069c015cb3d417ae0a0d33d6b0dd1"
+      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.2/hkc-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d2da5a6c63693ec08750a0b80deb8e539fd75d788edd380d5bc9563ef7869bcb"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
