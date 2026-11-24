@@ -1,25 +1,25 @@
 class Hkc < Formula
   desc "Command-line control for Hyundai/Kia connected cars in India"
   homepage "https://github.com/SwapShaOnline/hkconnect"
-  version "0.1.4"
+  version "0.1.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.4/hkc-aarch64-apple-darwin.tar.xz"
-      sha256 "da5b1d197faed0a982a13c95b1daa408a92479d834a99fd462e09a2a231dcc61"
+      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.5/hkc-aarch64-apple-darwin.tar.xz"
+      sha256 "bfd5f8b870da02d453b0fa8f34cebd8bfcba8942077697e117501f2ff46a1119"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.4/hkc-x86_64-apple-darwin.tar.xz"
-      sha256 "8fe2f9ddde99e5ad71c7d8f87209abdd4d7c7e6fd2e6dc0375b27ed7f6edc0cd"
+      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.5/hkc-x86_64-apple-darwin.tar.xz"
+      sha256 "8ab2225d23471553f879a1384aa7f1924d4552406668c06ed0390b7fa9d89d23"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.4/hkc-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1df2e1a720c0f3e39918cca1fe3ced0bc429f861971aad8bd701b6f6d185d183"
+      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.5/hkc-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "eddc5912420e58282dea4574f91e285b94276585fdb3bdba4bcbe62afabec0b7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.4/hkc-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8229dbeacdc39df6d9e40aa1bd46b676a119bfbb85505759d7e7ced0b9346f80"
+      url "https://github.com/SwapShaOnline/hkconnect/releases/download/v0.1.5/hkc-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4ebb0193cf81ada7453bf55787ee04d648734c8bd6c16ee5e60ff6857d28e191"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
